@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You — ExploringBits</title>
+  <meta name="description" content="After an incredible journey since 2020, ExploringBits is saying goodbye. Thank you to our team, readers, and community." />
+  <meta name="theme-color" content="#7a3b12" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Thank You — ExploringBits" />
+  <meta property="og:description" content="After an incredible journey since 2020, ExploringBits is saying goodbye. Thank you, everyone." />
+  <meta property="og:url" content="https://exploringbits.com/" />
+
+  <style>
+    :root {
+      --ink: #3a2410;
+      --ink-soft: #6b4a2c;
+      --accent: #c2410c;
+      --card: rgba(255, 255, 255, 0.55);
+      --line: rgba(122, 59, 18, 0.18);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.65;
+      background:
+        radial-gradient(1200px 600px at 50% -10%, #ffe9c7 0%, rgba(255, 233, 199, 0) 60%),
+        linear-gradient(160deg, #fff6e9 0%, #ffe2bf 35%, #ffc89a 70%, #ffb27a 100%);
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: clamp(2.5rem, 6vw, 5rem) 1.25rem;
+    }
+
+    main {
+      width: 100%;
+      max-width: 680px;
+      text-align: center;
+      animation: rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .brand {
+      font-size: 0.8rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: clamp(1.5rem, 4vw, 2.25rem);
+    }
+
+    h1 {
+      font-size: clamp(2.75rem, 11vw, 5rem);
+      line-height: 1.02;
+      letter-spacing: -0.02em;
+      font-weight: 800;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 .heart { color: var(--accent); }
+
+    .lead {
+      font-size: clamp(1.05rem, 2.6vw, 1.25rem);
+      color: var(--ink-soft);
+      max-width: 56ch;
+      margin: 0 auto 0.9rem;
+    }
+
+    .divider {
+      width: 56px;
+      height: 3px;
+      border: 0;
+      border-radius: 3px;
+      background: var(--accent);
+      opacity: 0.8;
+      margin: clamp(2.25rem, 6vw, 3rem) auto;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+      margin: 0 auto clamp(2.25rem, 6vw, 3rem);
+    }
+
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1.1rem 0.75rem;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+
+    .stat b {
+      display: block;
+      font-size: clamp(1.6rem, 6vw, 2.1rem);
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1.1;
+    }
+
+    .stat span {
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    h2 {
+      font-size: clamp(1.4rem, 4.5vw, 1.9rem);
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
+    }
+
+    .thanks p { color: var(--ink-soft); max-width: 56ch; margin: 0 auto 1.25rem; }
+
+    .names {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem;
+      margin: 0 auto 1.5rem;
+    }
+
+    .names li {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.5rem 1.1rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+
+    .signoff {
+      margin-top: clamp(2.5rem, 7vw, 3.5rem);
+      font-style: italic;
+      color: var(--ink-soft);
+    }
+
+    .signoff strong { color: var(--ink); font-style: normal; }
+
+    footer {
+      margin-top: clamp(2.5rem, 7vw, 3.5rem);
+      font-size: 0.82rem;
+      color: var(--ink-soft);
+      opacity: 0.85;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      main { animation: none; }
+    }
+
+    @media (max-width: 380px) {
+      .stats { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="brand">ExploringBits</p>
+
+    <h1>Thank&nbsp;you<span class="heart">.</span></h1>
+
+    <p class="lead">
+      After an unforgettable journey that began in September 2020, we're closing the
+      doors of ExploringBits. What started as a small idea — making computer science
+      and technology feel fascinating to everyone — grew into something far bigger
+      than I ever imagined.
+    </p>
+    <p class="lead">
+      None of it would have happened without the people who wrote, read, shared, and
+      believed in it.
+    </p>
+
+    <hr class="divider" />
+
+    <section class="stats" aria-label="ExploringBits by the numbers">
+      <div class="stat"><b>500+</b><span>Articles</span></div>
+      <div class="stat"><b>3M+</b><span>Total Views</span></div>
+      <div class="stat"><b>200K</b><span>Monthly Readers</span></div>
+      <div class="stat"><b>2020</b><span>Est.</span></div>
+    </section>
+
+    <section class="thanks" aria-label="Acknowledgements">
+      <h2>To the team</h2>
+      <p>
+        To the writers and minds who poured their time, curiosity, and care into every
+        article — thank you for making ExploringBits what it became.
+      </p>
+      <ul class="names">
+        <li>Ankush Thakur</li>
+        <li>Nilay Saxena</li>
+        <li>Harsh Srivastava</li>
+      </ul>
+
+      <h2>To every reader &amp; our community</h2>
+      <p>
+        To the hundreds of thousands of you who showed up each month, asked questions,
+        left comments, and shared what you learned — you were the reason this existed.
+        Thank you for exploring the bits with us.
+      </p>
+    </section>
+
+    <p class="signoff">
+      With gratitude,<br />
+      <strong>Aayush Kumar Gupta</strong> — Founder, ExploringBits
+    </p>
+
+    <footer>
+      ExploringBits · 2020–2026
+    </footer>
+  </main>
+</body>
+</html>
